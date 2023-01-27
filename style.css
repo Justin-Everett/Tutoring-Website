@@ -1,0 +1,26 @@
+* {
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login {
+    text-align: center;
+}
+
+.center {
+    position:absolute;
+    left:40%;
+    top:30%;
+    
+}
+
+#submit {
+    display:flex;
+    justify-content:center;
+    width: 120px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}

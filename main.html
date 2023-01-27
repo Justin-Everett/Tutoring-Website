@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Website Template</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input[type=login] {
+            width: 100%;
+            padding: 6px 10px;
+            margin: 8px 0;
+            border:none;
+            outline:none;
+            border-bottom: 2px solid rgb(255, 0, 0);
+        }
+        input[type=login]:focus {
+            border-bottom: 3px solid rgba(255, 0, 0, 0.274)
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <table id="table">
+            <tr><td id="login"><b>Login</b></td></tr>
+            <tr>
+                <td>
+                    <p>Input Username:</p> 
+                    <input id="username" type="login" onkeypress="doCheck()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Input Password:</p> 
+                    <input id="password" type="login" onkeypress="doCheck()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="submit" disabled style="color:red;background-color:rgb(216, 222, 228);" onclick="submit()">Log In</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="login.js"></script>
+</body>
